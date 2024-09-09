@@ -8,7 +8,6 @@ public class RemoveElementAtIndexK {
 		printElements(head);//prints the Double Linked list
 		Node head1=removeAtIndexK(head,7);//Remove the Node at Index k
 		printElements(head1);//prints the elements after removal of the node
-
 	}
 	//remove the node at an index k
 	public static Node removeAtIndexK(Node head, int k)
