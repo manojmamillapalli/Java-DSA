@@ -21,6 +21,7 @@ class Node
 }
 public class Introduction2DLL {
 	public static void main(String[] args)
+	
 	{
 		int[] arr= {1,2,3,4,5,6,7,8,9};
 		Node head=convertArray2DLL(arr);
@@ -44,7 +45,7 @@ public class Introduction2DLL {
 	public static void printElements(Node head)
 	{
 		Node temp=head;
-		while(temp.next1!=null)
+		while(temp!=null)
 		{
 			System.out.print(temp.data1+"->");
 			System.out.print("<-");

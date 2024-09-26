@@ -25,7 +25,7 @@ public class RemoveTail {
 		}
 		return head;
 	}
-	//methiod used to remove the last element
+	//method used to remove the last element
 	public static Node removeTail(Node head)
 	{
 		Node temp=head;
