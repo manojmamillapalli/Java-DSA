@@ -2,24 +2,24 @@ package com.trie;
 
 import java.util.* ;
 import java.io.*; 
-class Node
+class Node1
 {
-    public Node()
+    public Node1()
     {
 
     }
     int endcount=0;
     int prefixcount=0;
-    Node[] links=new Node[26];
+    Node1[] links=new Node1[26];
     boolean containsKey(char ch)
     {
         return (links[ch-'a']!=null);
     }
-    Node putChar(char ch, Node node)
+    Node1 putChar(char ch, Node1 node)
     {
         return links[ch-'a']=node;
     }
-    Node getChar(char ch)
+    Node1 getChar(char ch)
     {
         return links[ch-'a'];
     }
@@ -49,20 +49,20 @@ class Node
     }
 }
 public class Trie2 {
-    private static Node root;
+    private static Node1 root;
     public Trie2() {
         // Write your code here.
-        root=new Node();
+        root=new Node1();
     }
 
     public void insert(String word) {
         // Write your code here.
-        Node node=root;
+        Node1 node=root;
         for(int i=0;i<word.length();i++)
         {
             if(!node.containsKey(word.charAt(i)))
             {
-                node.putChar(word.charAt(i), new Node());
+                node.putChar(word.charAt(i), new Node1());
             }
             node=node.getChar(word.charAt(i));
             node.increasePrefix();
@@ -72,7 +72,7 @@ public class Trie2 {
 
     public int countWordsEqualTo(String word) {
         // Write your code here.
-        Node node=root;
+        Node1 node=root;
         for(int i=0;i<word.length();i++)
         {
             if(!node.containsKey(word.charAt(i)))
@@ -89,7 +89,7 @@ public class Trie2 {
 
     public int countWordsStartingWith(String word) {
         // Write your code here.
-        Node node=root;
+        Node1 node=root;
         for(int i=0;i<word.length();i++)
         {
             if(!node.containsKey(word.charAt(i)))
@@ -105,7 +105,7 @@ public class Trie2 {
 
     public void erase(String word) {
         // Write your code here.
-        Node node=root;
+        Node1 node=root;
         for(int i=0;i<word.length();i++)
         {
             if(!node.containsKey(word.charAt(i)))

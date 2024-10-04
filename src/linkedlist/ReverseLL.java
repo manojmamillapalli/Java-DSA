@@ -10,7 +10,7 @@ public class ReverseLL {
 		printele(head);
 //		reverseLL(head);
 //		printele(head);
-		Node front=reverseLLwithoutStack( head);
+		Node front=reversalLinkedListUsingRecurssion(head);
 		printele(front);
 	}
 	public static Node convertArray2LL(int[] arr) {
@@ -75,6 +75,18 @@ public class ReverseLL {
 		}
 		return prev;
 		
+	}
+	public static Node reversalLinkedListUsingRecurssion(Node head)
+	{
+		if(head==null || head.next==null)
+		{
+			return head;
+		}
+		Node newnode=reversalLinkedListUsingRecurssion(head.next);
+		Node front=head.next;
+		front.next=head;
+		head.next=null;
+		return newnode;
 	}
 
 }
