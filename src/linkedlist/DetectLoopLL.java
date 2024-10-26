@@ -12,6 +12,8 @@ public class DetectLoopLL {
 		//printElements(head);
         System.out.println(detectCycle(head));
         System.out.println(detectCycleUsingTortoise(head));
+        int length=lengthOfLoop(head);
+        System.out.println(length);
 	}
 	public static Node convertArr2LL(int[] arr)
 	{
@@ -94,8 +96,25 @@ public static boolean detectCycleUsingTortoise(Node head)
 	}
 	
 	
-		return false;
-		
-		
+		return false;	
+}
+public static int lengthOfLoop(Node head)
+{
+	
+	Node temp=head;
+	Map<Node, Integer> map=new HashMap<>();
+	int counter=0;
+	while(temp!=null)
+	{
+		if(map.containsKey(temp))
+		{
+			int lengthofloop=counter-map.get(temp);
+			return lengthofloop;
+		}
+		map.put(temp, counter);
+		temp=temp.next;
+		counter++;
+	}
+	return 0;
 }
 }
