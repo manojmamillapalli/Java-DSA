@@ -103,7 +103,7 @@ public static int lengthOfLoop(Node head)
 	
 	Node temp=head;
 	Map<Node, Integer> map=new HashMap<>();
-	int counter=0;
+	int counter=1;
 	while(temp!=null)
 	{
 		if(map.containsKey(temp))
