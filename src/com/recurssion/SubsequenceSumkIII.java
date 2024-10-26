@@ -3,10 +3,10 @@ import java.util.*;
 public class SubsequenceSumkIII {
 
 	public static void main(String[] args) {
-		int[] arr= {3,2,1,1,5,5};
+		int[] arr= {10, 2, -2, -20, 10};
 		int n=arr.length;
 		int index=0;
-		int target=5;
+		int target=-10;
 		int sum=0;
 		int ans=subseq(arr, n, index, target, sum);
 		System.out.println(ans);

@@ -4,7 +4,7 @@ public class QuickSort {
 
 	public static void main(String[] args) {
 		
-int[] arr= {4,6,8,1,9,3,0};
+int[] arr= {4,4,6,8,1,9,3,0};
 qs(arr, 0, arr.length-1);
 for(int i:arr)
 {

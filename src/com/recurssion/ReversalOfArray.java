@@ -21,7 +21,7 @@ public class ReversalOfArray {
 		{
 			return;
 		}
-		swap(arr,index, arr.length-index-1);
+		swap(arr,index, arr.length-1-index);
 		arrayReversal(arr, index+1);
 	}
 public static void swap(int[] arr, int a, int b)// we must pass the array into the swap method so that it directly

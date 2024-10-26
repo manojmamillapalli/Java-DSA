@@ -3,9 +3,9 @@ import java.util.*;
 public class SebSequenceSumkII {
 
 	public static void main(String[] args) {
-		int[] arr= {2,5};
+		int[] arr= {10,1,2,7,6,1,5};
 		List<Integer> ds=new ArrayList<>();
-		int target=5;
+		int target=8;
 		int sum=0;
 		int n=arr.length;
 		subseq(arr, sum, target, 0, n, ds);

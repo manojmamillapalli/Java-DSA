@@ -1,4 +1,4 @@
-package sortingtechniques;
+ package sortingtechniques;
 
 import java.util.ArrayList;
 

@@ -208,7 +208,7 @@ public static int depthOfTree(TreeNode root)
 		return 0;
 	}
 	int k1=depthOfTree(root.left);
-	int k2=depthOfTree(root.left);
+	int k2=depthOfTree(root.right);
 	return 1+Math.max(k1, k2);
 	
 }

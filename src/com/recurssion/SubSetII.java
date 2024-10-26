@@ -3,7 +3,7 @@ import java.util.*;
 public class SubSetII {
 
 	public static void main(String[] args) {
-		int[] arr= {1,2,2};
+		int[] arr= {2,2,2};
 		Arrays.sort(arr);
 		List<List<Integer>> ans=new ArrayList<>();
 		int index=0;

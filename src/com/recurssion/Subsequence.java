@@ -18,6 +18,7 @@ public class Subsequence {
 		int[] arr= {3,1,2};
 		List<Integer> ds=new ArrayList<>();
 		int n=arr.length;
+		Arrays.sort(arr);
 		subseq(arr,ds,n,0);
 	}
 	public static void subseq(int[] arr, List<Integer> ds, int n, int index)

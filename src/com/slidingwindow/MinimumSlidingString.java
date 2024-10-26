@@ -3,9 +3,11 @@ import java.util.*;
 public class MinimumSlidingString {
 
 	public static void main(String[] args) {
+		
 		String s="abcdef";
-		String p="bnh";
-		smallestWindow( s,p);
+		String p="abf";
+		String str=smallestWindow( s,p);
+		System.out.println(str);
 
 	}
 	 public static String smallestWindow(String s, String p)

@@ -3,8 +3,8 @@ import java.util.*;
 public class SubsequenceOfSumK {
 
 	public static void main(String[] args) {
-		int[] arr= {3,1,1,2};
-		int target=5;
+		int[] arr= {10,1,2,7,6,1,5};
+		int target=8;
 		List<Integer> ds=new ArrayList<>();
 		subseqsum(arr, ds, 0, target,0,arr.length);
 

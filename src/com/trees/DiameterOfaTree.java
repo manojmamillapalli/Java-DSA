@@ -7,7 +7,9 @@ public class DiameterOfaTree {
 		TreeNode root=convertArray2Tree(arr);
 		int[] arr1=new int[1];
 		arr1[0]=diameter(root, arr1);
+		int result=diameter(root, arr1);
 		System.out.println(arr1[0]);
+		System.out.println(result);
 
 	}
 public static TreeNode convertArray2Tree(int[] arr)
