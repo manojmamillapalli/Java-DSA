@@ -14,6 +14,8 @@ public class DetectLoopLL {
         System.out.println(detectCycleUsingTortoise(head));
         int length=lengthOfLoop(head);
         System.out.println(length);
+        int length2=lengthOfLoop2(head);
+        System.out.println(length2);
 	}
 	public static Node convertArr2LL(int[] arr)
 	{
@@ -114,6 +116,36 @@ public static int lengthOfLoop(Node head)
 		map.put(temp, counter);
 		temp=temp.next;
 		counter++;
+	}
+	return 0;
+}
+//finding the length of the loop using the optimal approach
+public static int findlength(Node slow, Node fast)
+{
+	
+	int count=1;
+	fast=fast.next;
+	while(fast!=slow)
+	{
+		fast=fast.next;
+		count++;
+	}
+	return count;
+	
+}
+public static int lengthOfLoop2(Node head)
+{
+	Node temp=head;
+	Node slow=head;
+	Node fast=head;
+	while(fast!=null && fast.next!=null )
+	{
+		slow=slow.next;
+		fast=fast.next.next;
+		if(slow==fast)
+		{
+			return findlength(slow, fast);
+		}
 	}
 	return 0;
 }
